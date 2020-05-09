@@ -17,10 +17,12 @@ public class CadastroPage extends BasePage{
     private WebElement sexoRadioButton;
     @FindBy(id = "elementosForm:comidaFavorita:0")
     private WebElement comidaCheck;
+
     @FindBy(id = "elementosForm:escolaridade")
-    private Select escolaridadeSelect;
+    private WebElement escolaridadeSelect;
     @FindBy(id = "elementosForm:esportes")
-    private Select esporteSelect;
+    private WebElement esporteSelect;
+
     @FindBy(id = "elementosForm:sugestoes")
     private WebElement sugestoesTextArea;
     @FindBy(id = "elementosForm:cadastrar")
@@ -71,12 +73,13 @@ public class CadastroPage extends BasePage{
     }
 
     public CadastroPage selecionarEscolaridade(String escolaridade) {
-        escolaridadeSelect.selectByVisibleText(escolaridade);
+
+        new Select(escolaridadeSelect).selectByVisibleText(escolaridade);
         return this;
     }
 
     public CadastroPage selecionarEsporte(String esporte) {
-        esporteSelect.selectByVisibleText(esporte);
+        new Select(esporteSelect).selectByVisibleText(esporte);
         return this;
     }
 
@@ -85,20 +88,32 @@ public class CadastroPage extends BasePage{
         return this;
     }
 
-    public CadastroPage ClicarCadastrar() {
+    public CadastroPage clicarCadastrar() {
         cadastrarButton.click();
         return this;
     }
+
+
 
     public CadastroPage clicarAlertButton(){
         alertButton.click();
         return this;
     }
 
+
+    public String capturarTextoAlerta(){
+        return driver.switchTo().alert().getText();
+    }
+
+    public CadastroPage aceitarAlerta(){
+        driver.switchTo().alert().accept();
+        return this;
+    }
+
+
     public String capturarMensagemSucesso(){
         return msgSucessoCadastro.getText();
     }
-
     public String capturarNomeResultado(){
         return nomeResultado.getText();
     }

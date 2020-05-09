@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a0ffc387-5552-4718-8599-bb13bce2d72d" name="Default Changelist" comment="" />
+    <list default="true" id="a0ffc387-5552-4718-8599-bb13bce2d72d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/DataProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/ValidarCamposObrigatoriosPessoaTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/testngSuit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/tm4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entities/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/CadastroPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/CadastroPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/resources/dataPool.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/resources/testng.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/BotoesTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/CadastrarPessoaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/CadastrarPessoaTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/BaseTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/CadastroPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/CadastroPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/BotoesTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/CadastrarPessoaTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/CadastrarPessoaTest.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +33,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -23,14 +44,20 @@
     </option>
   </component>
   <component name="ProjectId" id="1bY0OMOaGrVmt3nVO6fsWE3ZG44" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../meuProjetoSeleniun - curso 3 edicao/MeuProjetoSelenium" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="tests" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\aline.zanin\OneDrive - DBserver Assessoria em Sistemas de Informação Ltda\treinamento Selenium DB\automacaoPageObject\src\test\resources" />
       <recent name="C:\Users\aline.zanin\OneDrive - DBserver Assessoria em Sistemas de Informação Ltda\treinamento Selenium DB\automacaoPageObject\src\test\java" />
       <recent name="C:\Users\aline.zanin\OneDrive - DBserver Assessoria em Sistemas de Informação Ltda\treinamento Selenium DB\automacaoPageObject\src" />
       <recent name="C:\Users\aline.zanin\OneDrive - DBserver Assessoria em Sistemas de Informação Ltda\treinamento Selenium DB\automacaoPageObject\src\main\java" />
@@ -66,9 +93,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C:/Users/aline.zanin/OneDrive - DBserver Assessoria em Sistemas de Informação Ltda/treinamento Selenium DB/automacaoPageObject/src/test/java/resources/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="C:/Users/aline.zanin/OneDrive - DBserver Assessoria em Sistemas de Informação Ltda/treinamento Selenium DB/automacaoPageObject/src/test/resources/testngSuit.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="automacaoPageObject" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/resources/testng.xml" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/testngSuit.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -93,24 +120,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CadastrarPessoaTest.deveCadastrarPessoa (1)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="automacaoPageObject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.CadastrarPessoaTest" />
-      <option name="METHOD_NAME" value="deveCadastrarPessoa" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="CadastrarPessoaTest.deveCadastrarPessoa" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="automacaoPageObject" />
       <extension name="coverage">
@@ -129,13 +138,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ValidarCamposObrigatoriosPessoaTest.deveValidarCamposObrigatoriosCadastroPessoa" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="automacaoPageObject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.ValidarCamposObrigatoriosPessoaTest" />
+      <option name="METHOD_NAME" value="deveValidarCamposObrigatoriosCadastroPessoa" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.CadastrarPessoaTest.deveCadastrarPessoa" />
+        <item itemvalue="TestNG.ValidarCamposObrigatoriosPessoaTest.deveValidarCamposObrigatoriosCadastroPessoa" />
+        <item itemvalue="TestNG.C:/Users/aline.zanin/OneDrive - DBserver Assessoria em Sistemas de Informação Ltda/treinamento Selenium DB/automacaoPageObject/src/test/resources/testngSuit.xml" />
         <item itemvalue="TestNG.CadastrarPessoaTest" />
         <item itemvalue="TestNG.BotoesTest" />
-        <item itemvalue="TestNG.CadastrarPessoaTest.deveCadastrarPessoa (1)" />
-        <item itemvalue="TestNG.C:/Users/aline.zanin/OneDrive - DBserver Assessoria em Sistemas de Informação Ltda/treinamento Selenium DB/automacaoPageObject/src/test/java/resources/testng.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -151,5 +178,18 @@
       <updated>1588793688006</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

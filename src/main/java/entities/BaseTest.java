@@ -3,7 +3,9 @@ package entities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 
 
@@ -14,7 +16,7 @@ public class BaseTest {
     public WebDriver driver;
 
 
-    @BeforeTest
+    @BeforeClass
     public void preCond(){
         driverPath = "C:\\webdriver\\chrome\\81.0.4044.69\\chromedriver.exe"; //variavel que armazena o caminho do driver
         url = System.getProperty("user.dir")+"/src/paginas/componentes.html"; //varivel que armazena o diretório da aplicação
@@ -24,9 +26,12 @@ public class BaseTest {
         driver.manage().window().maximize();    //maximiza a tela
     }
 
-    @AfterTest
+
+
+
+    @AfterClass
     public void posCond(){
-       // driver.quit();
+      driver.quit();
     }
 
     protected WebDriver getDriver() {

@@ -2,53 +2,47 @@ package tests;
 
 
 import entities.BaseTest;
+import io.sicredi.tm4j.common.annotations.TestCase;
+import io.sicredi.tm4j.testng.TM4JTestNGListener;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import pages.CadastroPage;
 
-import java.util.Map;
-
+//@Listeners(TM4JTestNGListener.class)
 public class CadastrarPessoaTest extends BaseTest {
 
-    String nome ="Aline";
+  /*  String nome ="Aline";
     String sobrenome = "Zanin";
     String escolaridade = "Doutorado";
     String esporte = "Futebol";
-    String sugestoes = "colocar o codigo no git";
+    String sugestoes = "colocar o codigo no git";*/
 
-
-
-    @Test
-    public void deveCadastrarPessoa(){
+    //@TestCase(key = "12121")
+    @Test(dataProvider="providerPessoa",dataProviderClass= DataProvider.class)
+    public void deveCadastrarPessoa(String none, String sobrenome, String escolaridade, String esporte, String sugestao){
+      preCond();
         CadastroPage cp = new CadastroPage(getDriver());
-                 cp.preencherNome(nome)
+                 cp.preencherNome(none)
                 .preencherSobrenome(sobrenome)
                 .selecionarSexoRadioButton()
                 .selecionarComidaCheck()
                 .selecionarEscolaridade(escolaridade)
                 .selecionarEsporte(esporte)
-                .preencherSugestoes(sugestoes)
-                .ClicarCadastrar();
+                .preencherSugestoes(sugestao)
+                .clicarCadastrar();
         Assert.assertEquals(cp.capturarMensagemSucesso(), "Cadastrado!");
-        Assert.assertEquals(cp.capturarNomeResultado(), nome);
+        Assert.assertEquals(cp.capturarNomeResultado(), none);
         Assert.assertEquals(cp.capturarSobreNomeResultado(), sobrenome);
         Assert.assertEquals(cp.capturarSexoResultado(), "Feminino");
         Assert.assertEquals(cp.capturarComidaFavoritaResultado(), "Carne");
-        Assert.assertEquals(cp.capturarEscolaridadeResultado(), escolaridade);
+        Assert.assertEquals(cp.capturarEscolaridadeResultado(), escolaridade.toLowerCase());
         Assert.assertEquals(cp.capturarEsporteResultado(), esporte);
-        Assert.assertEquals(cp.capturarSugestoesResultado(), sugestoes);
-
-
-    /*Colocar os assert neste teste
-      --- DENTRO DE PRIMEIROS PASSOS CADASTRO PESSOA*/
+        Assert.assertEquals(cp.capturarSugestoesResultado(), sugestao);
+        posCond();
     }
 
-    /*colocar no padrão pageobject o teste das
-     regras de negocio
-    --- TESTS PARTE 2 VERIFICAR REGRA DE NEGOCIO*/
 
-    /*colocar no padrão pageobject o teste dos botoes
-    --- TESTS PARTE 2 VerificaComportamentoPopUps*/
 
 
 

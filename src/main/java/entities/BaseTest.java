@@ -1,0 +1,37 @@
+package entities;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+
+
+public class BaseTest {
+
+    public String driverPath;
+    public String url;
+    public WebDriver driver;
+
+
+    @BeforeTest
+    public void preCond(){
+        driverPath = "C:\\webdriver\\chrome\\81.0.4044.69\\chromedriver.exe"; //variavel que armazena o caminho do driver
+        url = System.getProperty("user.dir")+"/src/paginas/componentes.html"; //varivel que armazena o diretório da aplicação
+        System.setProperty("webdriver.chrome.driver", driverPath);//instancia do driver
+        driver = new ChromeDriver(); //instancia do navegador
+        driver.get(url);// abre o navegador na url especificada
+        driver.manage().window().maximize();    //maximiza a tela
+    }
+
+    @AfterTest
+    public void posCond(){
+       // driver.quit();
+    }
+
+    protected WebDriver getDriver() {
+        return driver;
+    }
+
+
+}

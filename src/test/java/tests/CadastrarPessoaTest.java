@@ -12,14 +12,14 @@ import pages.CadastroPage;
 //@Listeners(TM4JTestNGListener.class)
 public class CadastrarPessoaTest extends BaseTest {
 
-  /*  String nome ="Aline";
+   String nome ="Aline";
     String sobrenome = "Zanin";
     String escolaridade = "Doutorado";
     String esporte = "Futebol";
-    String sugestoes = "colocar o codigo no git";*/
+    String sugestoes = "colocar o codigo no git";
 
     //@TestCase(key = "12121")
-    @Test(dataProvider="providerPessoa",dataProviderClass= DataProvider.class)
+    @Test
     public void deveCadastrarPessoa(String none, String sobrenome, String escolaridade, String esporte, String sugestao){
       preCond();
         CadastroPage cp = new CadastroPage(getDriver());
